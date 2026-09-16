@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Introduction Activity",
-  "body": " Introduction Activity    This is the introduction to the activity.      This is the first exercise.    "
+  "body": " Introduction Activity    This is the introduction to the activity. TEst!      This is the first exercise.    "
 },
 {
   "id": "activity-01-intro-activity-3",
