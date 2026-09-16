@@ -71,24 +71,6 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "Homework",
   "body": " Homework    "
-},
-{
-  "id": "sec-assessment-template",
-  "level": "1",
-  "url": "sec-assessment-template.html",
-  "type": "Section",
-  "number": "",
-  "title": "Assessment Title",
-  "body": " Assessment Title  A first paragraph with some space for notes below it.  "
-},
-{
-  "id": "sec-assessment-template-copy",
-  "level": "1",
-  "url": "sec-assessment-template-copy.html",
-  "type": "Section",
-  "number": "",
-  "title": "Assessment Title",
-  "body": " Assessment Title  A first paragraph with some space for notes below it. COPY  "
 }
 ]
 
