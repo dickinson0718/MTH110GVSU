@@ -8,9 +8,9 @@
   <introduction>
     <p>
       This is the introduction to the activity.
+      TEst!
     </p>
   </introduction>
-
   <!-- Exercises start here. -->
   <exercise workspace="2in">
     <statement>
@@ -19,5 +19,4 @@
       </p>
     </statement>
   </exercise>
-
 </worksheet>
