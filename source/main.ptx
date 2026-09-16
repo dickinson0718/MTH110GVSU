@@ -64,12 +64,13 @@
       <!--<xi:include href="./homework/homework01.ptx"/>-->
     </chapter>
 
-    <chapter xml:id="dummyhomework">
-      <title>Dummy Homework</title>
+    <chapter xml:id="assessment">
+      <title>Assessments</title>
 
       <!-- Include homework files -->
       <!--<xi:include href="./homework/homework01.ptx"/>-->
       <xi:include href="./assessment/assessment-template.ptx"/>
+      <xi:include href="./assessment/assessment-template-copy.ptx"/>
     </chapter>
     <!-- Include additional chapters for other categories -->
   </book>
