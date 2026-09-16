@@ -2,6 +2,10 @@
 
 
 
+
+
+
+
 <!-- This is the main course file for ... . It is used to generate all the public facing course materials so those can be hosted online.  -->
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude">
   <!-- Include common macros etc: -->
@@ -65,6 +69,7 @@
       <!-- Include homework files -->
       <!--<xi:include href="./homework/homework01.ptx"/>-->
     </chapter>
+
     <!-- Include additional chapters for other categories -->
     <chapter xml:id="assessment">
       <title>Assessments</title>
@@ -76,7 +81,7 @@
         </p>
       </introduction>
       <!-- Remove the example and replace with your own Assessment -->
-      <xi:include href="./assessment/assessment-template.ptx/">
+      <xi:include href="./assessment/assessment-template.ptx">
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
   </book>
