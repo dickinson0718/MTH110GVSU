@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+
+
 <!-- This is the main course file for ... . It is used to generate all the public facing course materials so those can be hosted online.  -->
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude">
   <!-- Include common macros etc: -->
@@ -74,7 +76,7 @@
         </p>
       </introduction>
       <!-- Remove the example and replace with your own Assessment -->
-      <xi:include href="./assessment/01-intro-assessment.ptx"/>
+      <xi:include href="./assessment/assessment-template.ptx/">
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
   </book>
