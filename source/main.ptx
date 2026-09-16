@@ -69,20 +69,8 @@
 
       <!-- Include homework files -->
       <!--<xi:include href="./homework/homework01.ptx"/>-->
+      <xi:include href="./assessment/assessment-template.ptx"/>
     </chapter>
     <!-- Include additional chapters for other categories -->
-    <chapter xml:id="assessment">
-      <title>Assessments</title>
-
-      <introduction>
-        <p>
-          These are copies of the in-class Assessment distributed during the
-          semester.
-        </p>
-      </introduction>
-      <!-- Remove the example and replace with your own Assessment -->
-      <xi:include href="./assessment/assessment-template.ptx"/>
-      <!-- Add more xi:include files here to include them in the main course -->
-    </chapter>
   </book>
 </pretext>
