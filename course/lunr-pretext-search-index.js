@@ -64,13 +64,40 @@ var ptx_lunr_docs = [
   "body": " Handouts    "
 },
 {
-  "id": "homework",
+  "id": "homework-2",
   "level": "1",
-  "url": "homework.html",
-  "type": "Chapter",
+  "url": "homework-2.html",
+  "type": "Worksheet",
   "number": "",
-  "title": "Homework",
-  "body": " Homework    "
+  "title": "Homework 01",
+  "body": " Homework 01    Instructions: Complete all the exercises below and submit your work by the due date.      This is the first homework exercise.     "
+},
+{
+  "id": "homework-2-3-1",
+  "level": "2",
+  "url": "homework-2.html#homework-2-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  This is the first homework exercise.   "
+},
+{
+  "id": "sec-assessment-template",
+  "level": "1",
+  "url": "sec-assessment-template.html",
+  "type": "Section",
+  "number": "",
+  "title": "Assessment Title",
+  "body": " Assessment Title  A first paragraph with some space for notes below it.  "
+},
+{
+  "id": "sec-assessment-template-copy",
+  "level": "1",
+  "url": "sec-assessment-template-copy.html",
+  "type": "Section",
+  "number": "",
+  "title": "Assessment Title",
+  "body": " Assessment Title  A first paragraph with some space for notes below it. COPY  "
 }
 ]
 
