@@ -61,14 +61,12 @@
       <title>Homework</title>
 
       <!-- Include homework files -->
-      <!--<xi:include href="./homework/homework01.ptx"/>-->
+      <xi:include href="./homework/homework-01.ptx"/>
     </chapter>
 
-    <chapter xml:id="assessment">
+    <chapter xml:id="assessment" component="private">
       <title>Assessments</title>
 
-      <!-- Include homework files -->
-      <!--<xi:include href="./homework/homework01.ptx"/>-->
       <xi:include href="./assessment/assessment-template.ptx"/>
       <xi:include href="./assessment/assessment-template-copy.ptx"/>
     </chapter>

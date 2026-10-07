@@ -14,11 +14,11 @@
     <!-- Level at which html output is split into separate pages: 0 gives -->
     <!-- a single page, 1 is chapter, 2 is section, and so on through 6.  -->
     <!-- The default depends on the type of document.                     -->
-    <chunking level="0"/>
+    <chunking level="2"/>
     <!-- Depth of the table of contents, from 0 through 6.  A value of 0 -->
     <!-- means no table of contents.  The default depends on the type of -->
     <!-- document and the conversion.                                    -->
-    <tableofcontents level="0"/>
+    <!--<tableofcontents level="1" />-->
     <!-- Visibility of exercise components where they first appear.          -->
     <!-- There are four components (statement/hint/answer/solution) for each -->
     <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
@@ -80,7 +80,8 @@
     <!-- is a space-separated list of component names of your own choosing. -->
     <!-- See
     https://pretextbook.org/doc/guide/html/publication-file-source.html#publication-file-source-version -->
-    <version include="online"/>
+    <!-- In this example, we include the any unlabeled components and exclude any labeled components)-->
+    <version include=""/>
     <!-- Optional source files are named by attributes on the source     -->
     <!-- element itself, as filenames relative to the file holding your  -->
     <!-- "pretext" element.  @customizations points to a file of         -->
@@ -90,7 +91,6 @@
       <source customizations="customizations.xml"
               private-solutions="private-solutions.xml">
     -->
-    <components exclude="private"/>
   </source>
   <numbering>
     <!-- The divisions element describes the numbering of divisions.   -->
@@ -195,13 +195,15 @@
   <!--   that copies an iframe snippet for your website or LMS.         -->
   <!-- @design-width is an integer, default 600, used as the base when  -->
   <!--   a percentage width for an interactive must become pixels.      -->
-  <html>
+  <!-- The embed-button below makes it easy to copy the code for an     -->
+  <!-- iframe into your LMS.                                            -->
+  <html embed-button="yes">
     <!-- Replace the <html> tag above with the one below to try these-->
     <!--
     <html
           short-answer-responses="graded"
           favicon="none"
-          embed-button="no"
+          embed-button="yes"
           design-width="600"
       >
   -->
@@ -254,7 +256,7 @@
     <!-- Legacy stylesheets remain available through @style, but without  -->
     <!-- the full range of configuration.  See                            -->
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
-    <css theme="denver" primary-color="#386F94" primary-color-dark="#5192BD"/>
+    <css theme="denver" primary-color="#386F94" primary-color-dark="#5192BD" provide-dark-mode="yes"/>
     <!-- Search.  @variant is "textbook" (the default; the value          -->
     <!-- "default" is a synonym), "reference", or "none".  @google-cx is  -->
     <!-- a Google cx number, and setting it adds a Google search box.  If -->
@@ -266,10 +268,7 @@
     <!-- not on the path to the current page; the default is "no".       -->
     <!-- @preexpanded-levels, 0 through 6 (default 0), says how many     -->
     <!-- levels are expanded initially away from that path.              -->
-    <!-- NOTE: the entry below spells the element "toc", which PreTeXt   -->
-    <!-- does not recognize, so it currently has no effect.  The name to -->
-    <!-- use is "tableofcontents", as in the comment above.              -->
-    <tableofcontents focused="yes" preexpanded-levels="0"/>
+    <!--<tableofcontents focused="no" preexpanded-levels="0" />-->
     <!-- Navigation.  @logic is "linear" (the default) or "tree"; -->
     <!-- @upbutton is "yes" (the default) or "no".                -->
     <!--<navigation logic="linear" upbutton="yes" />-->
