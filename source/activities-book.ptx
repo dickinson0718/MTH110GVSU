@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+    <!-- Include common macros etc: -->
+    <xi:include href="./docinfo.ptx"/>
+    <book xml:id="activities-book">
+        <title>Math 110 In-Class Activities</title>
+
+        <chapter xml:id="activities-chapter">
+            <title>Activities</title>
+
+            <xi:include href="./activities/01-intro-activity.ptx"/>
+            <!-- ... -->
+        </chapter>
+    </book>
+</pretext>

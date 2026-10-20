@@ -80,7 +80,7 @@
     <!-- is a space-separated list of component names of your own choosing. -->
     <!-- See
     https://pretextbook.org/doc/guide/html/publication-file-source.html#publication-file-source-version -->
-    <version include="online"/>
+    <version include="online student"/>
     <!-- Optional source files are named by attributes on the source     -->
     <!-- element itself, as filenames relative to the file holding your  -->
     <!-- "pretext" element.  @customizations points to a file of         -->

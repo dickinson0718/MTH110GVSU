@@ -1,22 +1,264 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<worksheet xml:id="sample-worksheet">
+  <title>Exact Linear Models</title>
 
-<!-- When creating a new activity, make a copy of this file with appropriate name -->
-<worksheet xml:id="activity-01-intro-activity">
-  <title>Introduction Activity</title>
+  <objectives>
+    <ul>
+      <li>Creating and using exact linear models</li>
+    </ul>
+  </objectives>
 
-  <!-- Optional introduction -->
   <introduction>
     <p>
-      This is the introduction to the activity.
-      TEst!
+      Please answer the following questions with your group mates.
+      Be prepared to put your solutions on the board.
     </p>
   </introduction>
-  <!-- Exercises start here. -->
-  <exercise workspace="2in">
-    <statement>
-      <p>
-        This is the first exercise.
-      </p>
-    </statement>
-  </exercise>
+
+  <page>
+    <exercise xml:id="exact-linear-tent">
+      <introduction>
+        <p>
+          You are hosting a large multi-day sporting camp and need a place for
+          the participants to gather outside.
+          You are concerned that it might rain, so you investigate renting a
+          tent.
+          You call Tent-Rent and they say for the size you want it costs $210
+          for the setup and removal plus $23.50 per day to rent the tent.
+        </p>
+      </introduction>
+
+      <task workspace="0.75in">
+        <statement>
+          <p>
+            If you rent the tent for 3 days how much does it cost?
+            for 5 days?
+            for 2 weeks?
+          </p>
+        </statement>
+
+        <solution component="solutions">
+          <p>
+            3 days: <m>210 + 23.50(3) = 280.50</m>.
+            5 days: <m>210 + 23.50(5) = 327.50</m>.
+            14 days: <m>210 + 23.50(14) = 539.00</m>.
+            (All in dollars.)
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="0.75in">
+        <statement>
+          <p>
+            Find the cost <m>C(d)</m> for renting the tent for <m>d</m> days.
+            (i.e.
+            instead of using 5 or 3 for the number of days, use <m>d</m>.)
+          </p>
+        </statement>
+
+        <solution component="solutions">
+          <p>
+            <m>C(d) = 210 + 23.50d</m>
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="1.75in">
+        <statement>
+          <p>
+            Use technology to graph <m>C(d)</m>.
+            What is the slope of <m>C(d)</m>?
+            What is the vertical intercept of <m>C(d)</m>?
+            Roughly copy your graph here:
+          </p>
+        </statement>
+
+        <solution component="solutions">
+          <p>
+            The graph is a line through <m>(0, 210)</m> rising 23.50 per day.
+            The slope is 23.50 (dollars per day) and the vertical intercept is
+            210 (dollars, the setup and removal fee).
+          </p>
+
+          <image width="50%">
+            <description>
+              <p>
+                Graph of the cost C(d) in dollars against the number of days d.
+                It is a straight line starting at the point (0, 210) on the
+                vertical axis and rising steadily to about 915 dollars at 30
+                days.
+              </p>
+            </description>
+            <prefigure label="tent-cost-graph" xmlns="https://prefigure.org">
+              <diagram dimensions="(360,300)" margins="5">
+                <definition>
+                  f(x) = 210 + 23.5*x
+                </definition>
+                <coordinates bbox="[-5,-100,38,1100]">
+                  <grid-axes xlabel="d (days)" ylabel="C (dollars)"/>
+                  <graph at="cost-line" function="f" domain="(0,30)"/>
+                  <point p="(0,210)" at="intercept"/>
+                  <label anchor="(0,210)" alignment="ne">
+                    <m>
+                      (0,210)
+                    </m>
+                  </label>
+                </coordinates>
+                <annotations>
+                  <annotation ref="figure" text="Graph of the tent rental cost against the number of days">
+                    <annotation ref="cost-line" text="A line rising 23.50 dollars for each additional day"/>
+                    <annotation ref="intercept" text="The vertical intercept, 210 dollars, the setup and removal fee"/>
+                  </annotation>
+                </annotations>
+              </diagram>
+            </prefigure>
+          </image>
+        </solution>
+      </task>
+
+      <task workspace="0.75in">
+        <statement>
+          <p>
+            Is <m>(30,920)</m> on the graph?
+            Is <m>(20,680)</m> on the graph?
+            Why or why not?
+          </p>
+        </statement>
+
+        <solution component="solutions">
+          <p>
+            <m>C(30) = 915 \ne 920</m>, so <m>(30,920)</m> is not on the graph.
+            <m>C(20) = 680</m>, so <m>(20,680)</m> is on the graph.
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="0.75in">
+        <statement>
+          <p>
+            Suppose I have $2000 for tent rental.
+            How long can I rent the tent?
+            First write down an equation you must solve to answer this question.
+          </p>
+        </statement>
+
+        <solution component="solutions">
+          <p>
+            Solve <m>210 + 23.50d = 2000</m>, which gives
+            <m>d = 1790/23.50 \approx 76.17</m>.
+            You can rent the tent for 76 full days (cost $1996).
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
+
+  <page>
+    <exercise xml:id="exact-linear-taxi">
+      <introduction>
+        <p>
+          You have traveled to Chicago and need to get across town.
+          You decide to take a taxi.
+          The total cost of a ride of <m>m</m> miles is given by
+          <me>
+            C(m) = 4.50 + 3.25m.
+          </me>
+        </p>
+      </introduction>
+
+      <task workspace="0.75in">
+        <statement>
+          <p>
+            What is the cost of a ride of 5 miles?
+          </p>
+        </statement>
+
+        <solution component="solutions">
+          <p>
+            <m>C(5) = 4.50 + 3.25(5) = 20.75</m>, so $20.75.
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            If you only have $30 for taxi fare, how far can you go?
+            First write down an equation you must solve to answer this question.
+          </p>
+        </statement>
+
+        <solution component="solutions">
+          <p>
+            Solve <m>4.50 + 3.25m = 30</m>, which gives
+            <m>m = 25.50/3.25 \approx 7.85</m>.
+            You can go about 7.8 miles before reaching $30.
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="1in">
+        <statement>
+          <p>
+            What is the slope of <m>C(m)</m>?
+            What are the units of this number?
+            What does it mean in this context?
+          </p>
+        </statement>
+
+        <solution component="solutions">
+          <p>
+            The slope is 3.25 dollars per mile: each additional mile costs
+            $3.25.
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="0.5in">
+        <statement>
+          <p>
+            What is the vertical intercept of <m>C(m)</m>?
+            What are the units of this number?
+          </p>
+        </statement>
+
+        <solution component="solutions">
+          <p>
+            The vertical intercept is 4.50 dollars, the initial charge (a ride
+            of 0 miles).
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="0.75in">
+        <statement>
+          <p>
+            For what value of <m>m</m> does <m>C(m)=30</m>?
+            What does this value mean in this context?
+          </p>
+        </statement>
+
+        <solution component="solutions">
+          <p>
+            <m>m \approx 7.85</m>: a ride of about 7.85 miles costs exactly $30.
+          </p>
+        </solution>
+      </task>
+
+      <task workspace="0.75in">
+        <statement>
+          <p>
+            What is <m>C(7.5)</m>?
+            What does this value mean in this context?
+          </p>
+        </statement>
+
+        <solution component="solutions">
+          <p>
+            <m>C(7.5) = 4.50 + 3.25(7.5) \approx 28.88</m>: a 7.5-mile ride
+            costs about $28.88.
+          </p>
+        </solution>
+      </task>
+    </exercise>
+  </page>
 </worksheet>
